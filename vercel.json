@@ -1,0 +1,26 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "app.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "app.py"
+    }
+  ],
+  "env": {
+    "FLASK_ENV": "production"
+  }
+}
+```
+
+## 📁 Your Complete Project Structure:
+```
+instagram-api/
+├── app.py              (Main Flask API - already created)
+├── requirements.txt    (Copy above)
+└── vercel.json        (Copy above)
